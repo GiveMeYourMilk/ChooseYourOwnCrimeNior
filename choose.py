@@ -1,5 +1,5 @@
 # Choose.py
-# by Wylder G., 
+# by Wylder G., Tabor F., 
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
