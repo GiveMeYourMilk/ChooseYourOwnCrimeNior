@@ -17,16 +17,18 @@ def intro():
     messagebox.showinfo("Title", "\nHello, you are a _____ from ____. " + \
                         "You stumble across such and such.")
     choice = simpledialog.askinteger("Choose wisely",
-                                   "You have a choice to pick: 1 or 2.")
+                                   "You have a choice to pick: 1, 2, or 3.")
     if choice == 1:
-        choice1()
+        iwork()
     elif choice == 2:
-        choice2()
+        iignore()
+    elif choice == 3:
+        iquit()
     else:
         intro()
 
 ################ Student A Functions #####################
-def choice1():
+def iwork():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
     if (choice == 1):
@@ -40,7 +42,7 @@ def choice1():
         choice1()
 
 ################ Student B Functions #####################
-def choice2():
+def iignore():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
     if (choice == 1):
@@ -53,6 +55,19 @@ def choice2():
     else:
         choice2()
 
+################ Student C Functions #####################
+def iquit():
+    choice = simpledialog.askinteger("Choose wisely",
+                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    if (choice == 1):
+        messagebox.showinfo("The End",
+                            "You chose right.  THE END")
+
+    elif (choice == 2):
+        messagebox.showinfo("The End",
+                            "You chose ok.  THE END")
+    else:
+        choice2()
 ################ Main #####################
 intro()
 
