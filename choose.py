@@ -17,13 +17,15 @@ def intro():
     messagebox.showinfo("Title", "\nHello, you are a _____ from ____. " + \
                         "You stumble across such and such.")
     choice = simpledialog.askinteger("Choose wisely",
-                                   "You have a choice to pick: 1, 2, or 3.")
+                                   "You have a choice to pick: 1, 2, 3, or 4.")
     if choice == 1:
         iwork()
     elif choice == 2:
         iignore()
     elif choice == 3:
         iquit()
+    elif choice == 4:
+        ivengence()
     else:
         intro()
 
@@ -55,7 +57,7 @@ def iignore():
     else:
         choice2()
 
-################ Student C Functions #####################
+################ Robat's Functions #####################
 def iquit():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
@@ -68,6 +70,21 @@ def iquit():
                             "You chose ok.  THE END")
     else:
         choice2()
+
+################ Student D Functions #####################
+def ivengence():
+    choice = simpledialog.askinteger("Choose wisely",
+                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    if (choice == 1):
+        messagebox.showinfo("The End",
+                            "You chose right.  THE END")
+
+    elif (choice == 2):
+        messagebox.showinfo("The End",
+                            "You chose ok.  THE END")
+    else:
+        choice1()
+
 ################ Main #####################
 intro()
 
