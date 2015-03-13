@@ -85,6 +85,13 @@ def ivengence():
     else:
         choice1()
 
+################ Winikka's Functions #####################
+# Note this is an alert of the Winikka Broadcast System
+# This is only a test
+# Winikka is not really going to code a function here
+# If he were to code, he would put it here.
+# This is just to show you how to collaborate using Git
+
 ################ Main #####################
 intro()
 
