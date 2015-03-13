@@ -14,8 +14,7 @@ w.pack()
 
 def intro():
     """ Introductory Function -> starts the story going """
-    messagebox.showinfo("Title", "\nHello, you are a _____ from ____. " + \
-                        "You stumble across such and such.")
+    messagebox.showinfo("...", "July 10th, 1999. A day at work.")
     choice = simpledialog.askinteger("Choose wisely",
                                    "You have a choice to pick: 1, 2, 3, or 4.")
     if choice == 1:
