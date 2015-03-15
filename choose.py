@@ -12,11 +12,48 @@ root = Tk()
 w = Label(root, text="Choose Your Own Adventure")
 w.pack()
 
+# Beginning Dialogue
+messagebox.showinfo("...", "July 10th, 1999. A day at work.")
+messagebox.showinfo("Prologue", "'Congratulations on this "
+                        "new position. It's gonna be a brand n"
+                        "ew start for you as one of my detecti"
+                        "ves. Hopefully things don't get too bo"
+                        "ring for you. For now, rest up until "
+                        "tomorrow. Enjoy your night.'")
+name = simpledialog.askstring("Prologue", "'Bye the way, what was"
+                                   " your name again?")
+messagebox.showinfo("Prologue", "" + name + ", I'll remember that.")
+messagebox.showinfo("Prologue", "Later that night.")
+messagebox.showinfo("Prologue", "'Too many papers tonight..."
+                        " Hey, excuse me sir. No visitors after-")
+#os.startfile('Gunshot.mp3')
+messagebox.showinfo("A New Case", "The next day.")
+messagebox.showinfo("A New Case", "You're excited for a new"
+                        " start at your workplace. In your car, "
+                        "you notice sirens near the building an"
+                        "d as you get closer see investigators. "
+                        "As you park your car and rush to the s"
+                        "cene, you can't help but think your fi"
+                        "rst case might be coming sooner than y"
+                        "ou thought.")
+messagebox.showinfo("A New Case", "'What happened?' you ask one of the"
+                        " nearby officers.")
+messagebox.showinfo("A New Case", "\n'The boss, he was shot and killed', he answers."
+                        "\n    " 
+                        "\n'What!?' you yell out in surprise. Quickly you, cal"
+                        "m down and walk a short distance away from everyone."
+                        "You realize that your next move could change you ent"
+                        "ire life and career.")
+
 def intro():
     """ Introductory Function -> starts the story going """
-    messagebox.showinfo("...", "July 10th, 1999. A day at work.")
-    choice = simpledialog.askinteger("Choose wisely",
-                                   "You have a choice to pick: 1, 2, 3, or 4.")
+
+    choice = simpledialog.askinteger("A New Case", "\n What will you do?" + \
+                                 "\n (1) Take on the case yourself in secret" + \
+                                 "\n (2) Ignore the situation and walk away" + \
+                                 "\n (3) Quit the job at the agency" + \
+                                 "\n (4) Pursue vengeance on the people that did this")
+                                 
     if choice == 1:
         iwork()
     elif choice == 2:
