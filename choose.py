@@ -65,7 +65,7 @@ def intro():
     else:
         intro()
 
-################ Student A Functions #####################
+################ Amiel's Functions #####################
 def iwork():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
@@ -76,6 +76,9 @@ def iwork():
     elif (choice == 2):
         messagebox.showinfo("The End",
                             "You chose ok.  THE END")
+    elif (choice == 3):
+        messagebox.showinfo("The End",
+                            "You chose poorly.  THE END")
     else:
         choice1()
 
