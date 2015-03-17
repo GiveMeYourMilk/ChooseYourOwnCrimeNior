@@ -70,7 +70,7 @@ def iwork():
     messagebox.showinfo("Secrecy and Solitude", "You decide to work in"
                         " secrecy and solitude. What is your next choice?")
     choice = simpledialog.askinteger("Secrecy and Solitude",
-                                     "\n(1) Go back to the crime scene; Reinvestigate"
+                                     "(1) Go back to the crime scene; Reinvestigate"
                                      "\n(2) Re-interrogate your prime suspect"
                                      "\n(3) Go over your evidence once more")
     if (choice == 1):
@@ -94,6 +94,26 @@ def iwork():
     else:
         iwork()
 
+def iwork2_1():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) It seems careless for a criminal mastermind like 'S' to"
+                                     " slip up like this, I should investigate. Who is this 'Robert M'?"
+                                     "\n(2) Hah, what nonsense")
+    if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "Robert Malcone, 13 counts of armed robbery, 2 counts"
+                            "of manslaughter, and suspect for dozens of murder"
+                            "cases; street alias, 'The Gun'"
+                            "\n\nRobert must be the hired hand for 'S'. 'S' has to be the killer!")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You follow Robert's trails, and discover he is Mafia. Their fearless"
+                            " leader Silvone must be 'S'!"
+                            "\n\nDo you follow up freelance, or go to the police with this newfound information?")
+        iwork3_1()
+    else:
+        messagebox.showinfo("Secrecy and Solitude",
+                            "It seems you just gave up your only lead by sheer lack of interest."
+                            " Your story ends here")
 ################ Student B Functions #####################
 def iignore():
     choice = simpledialog.askinteger("Choose wisely",
