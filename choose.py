@@ -66,6 +66,12 @@ def intro():
         intro()
 
 ################ Amiel's Functions #####################
+
+# I still need to finish THESE before I can continue
+"""
+]iwork2_2, 3
+]iwork4_1
+"""
 def iwork():
     messagebox.showinfo("Secrecy and Solitude", "You decide to work in"
                         " secrecy and solitude. What is your next choice?")
@@ -96,24 +102,50 @@ def iwork():
 
 def iwork2_1():
     choice = simpledialog.askinteger("Secrecy and Solitude",
-                                     "(1) It seems careless for a criminal mastermind like 'S' to"
-                                     " slip up like this, I should investigate. Who is this 'Robert M'?"
-                                     "\n(2) Hah, what nonsense")
+                                     "(1) Hah, what nonsense"
+                                     "\n (2) It seems careless for a criminal mastermind like 'S' to"
+                                     " slip up like this, I should investigate. Who is this 'Robert M'?")
     if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "It seems you just gave up your only lead by sheer lack of interest."
+                            " Your story ends here")
+    elif (choice == 2):
         messagebox.showinfo("Secrecy and Solitude",
                             "Robert Malcone, 13 counts of armed robbery, 2 counts"
                             "of manslaughter, and suspect for dozens of murder"
                             "cases; street alias, 'The Gun'"
-                            "\n\nRobert must be the hired hand for 'S'. 'S' has to be the killer!")
+                            "\n\nRobert must be the hired hand for whoever 'S' is.")
         messagebox.showinfo("Secrecy and Solitude",
-                            "You follow Robert's trails, and discover he is Mafia. Their fearless"
-                            " leader Silvone must be 'S'!"
+                            "You now can either freelance with this new information, or give"
+                            " this information to the police"
                             "\n\nDo you follow up freelance, or go to the police with this newfound information?")
         iwork3_1()
     else:
+        iwork2_1()
+    
+def iwork3_1():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) Follow up on Roberts possible ties to the hit"
+                                     "\n(2) Give this newfound information to the police")
+    if (choice == 1):
         messagebox.showinfo("Secrecy and Solitude",
-                            "It seems you just gave up your only lead by sheer lack of interest."
-                            " Your story ends here")
+                            "You discover that Robert had also been working as a 'collection"
+                            " agent' for the Mafia. His boss is none other than the elusive 'Silvone'."
+                            " Silvone must be 'S'")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "This man... Silvone, epiphany of a scumbag, murderer of innocent"
+                            " men, women, and children all alike. This dirtbag deserves to die..."
+                            " Should I murder this man? Chances are he might get out again if"
+                            " I bring him to the station... Rich men walk. But if I kill him, I stoop to"
+                            " his level")
+        iwork4_1()
+    elif (choice == 2):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "The other detectives see you have become too invested in the case,"
+                            " and with this newfound information, they are able to take the case"
+                            " away from you. You lose control of the case")
+    else:
+        iwork3_1()
 ################ Student B Functions #####################
 def iignore():
     choice = simpledialog.askinteger("Choose wisely",
