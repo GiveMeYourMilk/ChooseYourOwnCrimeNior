@@ -20,7 +20,7 @@ messagebox.showinfo("Prologue", "'Congratulations on this "
                         "ves. Hopefully things don't get too bo"
                         "ring for you. For now, rest up until "
                         "tomorrow. Enjoy your night.'")
-name = simpledialog.askstring("Prologue", "'Bye the way, what was"
+name = simpledialog.askstring("Prologue", "'By the way, what was"
                                    " your name again?")
 messagebox.showinfo("Prologue", "" + name + ", I'll remember that.")
 messagebox.showinfo("Prologue", "Later that night.")
@@ -67,20 +67,32 @@ def intro():
 
 ################ Amiel's Functions #####################
 def iwork():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    messagebox.showinfo("Secrecy and Solitude", "You decide to work in"
+                        " secrecy and solitude. What is your next choice?")
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "\n(1) Go back to the crime scene; Reinvestigate"
+                                     "\n(2) Re-interrogate your prime suspect"
+                                     "\n(3) Go over your evidence once more")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
-
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You go back to the crime scene to reinvestigate, and"
+                            " find a new letter. You open the letter and it says"
+                            "\n\n    'TO: ROBERT M: Great job on the hit Robert, that"
+                            " detective won't be snooping in private affairs anymore"
+                            ", here is the $15,000, as promised' -S ")
+        iwork2_1()
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You see him in the nearby alleyway, on the way to"
+                            " his home, harassing an innocent woman.")
+        iwork2_2()
     elif (choice == 3):
-        messagebox.showinfo("The End",
-                            "You chose poorly.  THE END")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You find new evidence in an hour log that gives"
+                            " your prime suspect the time to commit the murder")
+        iwork2_3()
     else:
-        choice1()
+        iwork()
 
 ################ Student B Functions #####################
 def iignore():
