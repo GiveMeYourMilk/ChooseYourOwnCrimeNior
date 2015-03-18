@@ -3,16 +3,22 @@
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
+# Music
+'FL Studios Gunshot FX'
+'John Coltrane: In a Sentimental Mood'
+
 # Import Statements
 from tkinter import *
 import tkinter.simpledialog
 import tkinter.messagebox
+import os
 
 root = Tk()
 w = Label(root, text="Choose Your Own Adventure")
 w.pack()
 
 # Beginning Dialogue
+os.startfile('coltrane.mp3')
 messagebox.showinfo("...", "July 10th, 1999. A day at work.")
 messagebox.showinfo("Prologue", "'Congratulations on this "
                         "new position. It's gonna be a brand n"
@@ -26,7 +32,8 @@ messagebox.showinfo("Prologue", "" + name + ", I'll remember that.")
 messagebox.showinfo("Prologue", "Later that night.")
 messagebox.showinfo("Prologue", "'Too many papers tonight..."
                         " Hey, excuse me sir. No visitors after-")
-#os.startfile('Gunshot.mp3')
+os.startfile('gunshot.mp3')
+messagebox.showinfo("Prologue", "BANG")
 messagebox.showinfo("A New Case", "The next day.")
 messagebox.showinfo("A New Case", "You're excited for a new"
                         " start at your workplace. In your car, "
@@ -146,19 +153,46 @@ def iwork3_1():
                             " away from you. You lose control of the case")
     else:
         iwork3_1()
-################ Student B Functions #####################
+################ Niraj's Functions #####################
 def iignore():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    messagebox.showinfo("The Detective Allergic to Murders",
+                        "You decide to ignore the case despite some people"
+                        " looking at you for answers. 'Well, it's just gonna"
+                        " have to be someone else' you think. Lost in your t"
+                        "houghts, you fail to notice a shady figure overlooking"
+                        " the whole scene.")
+    messagebox.showinfo("The Detective Allergic to Murder",
+                        "The next day...")
+    messagebox.showinfo("The Detective Allergic to Murder",
+                        "Going through your usual morning routine,"
+                        " you drive to work. There, you see the same"
+                        " situation as yesterday and the situation seems"
+                        "strangely familiar.")
+    messagebox.showinfo("The Detective Allergic to Murder",
+                        "You see the partner that was assigned to you"
+                        "\n the other day and ask, 'What happened here?'" + \
+                        "\n"
+                        "\n 'Another murder happened, and it ain't pretty'"
+                        ", he promptly answers."
+                        "\n"
+                        "\n You stand there shocked. Another murder? What to "
+                        "do now...")
+    ignore()
+def ignore():
+    choice = simpledialog.askinteger("The Detective Allergic to Murder",
+                                     "\n(1) Work. This case could"
+                                     " be your last if you're not careful" + \
+                                     "\n(2) Give the lie you did it and confess for your sins."
+                                     "\n(3) Ignore the murder. Not your problem")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        work()
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        confess()
+    elif choice == 3:
+        nope()
     else:
-        choice2()
+        ignore()
 
 ################ Robat's Functions #####################
 def iquit():
