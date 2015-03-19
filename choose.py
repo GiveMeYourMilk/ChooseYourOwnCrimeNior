@@ -35,6 +35,7 @@ messagebox.showinfo("Prologue", "'Too many papers tonight..."
 os.startfile('gunshot.mp3')
 messagebox.showinfo("Prologue", "BANG")
 messagebox.showinfo("A New Case", "The next day.")
+os.startfile('coltrane.mp3')
 messagebox.showinfo("A New Case", "You're excited for a new"
                         " start at your workplace. In your car, "
                         "you notice sirens near the building an"
@@ -166,7 +167,7 @@ def iignore():
     messagebox.showinfo("The Detective Allergic to Murder",
                         "Going through your usual morning routine,"
                         " you drive to work. There, you see the same"
-                        " situation as yesterday and the situation seems"
+                        " situation as yesterday and the situation seems "
                         "strangely familiar.")
     messagebox.showinfo("The Detective Allergic to Murder",
                         "You see the partner that was assigned to you"
@@ -193,8 +194,14 @@ def ignore():
         nope()
     else:
         ignore()
-
-################ Robat's Functions #####################
+def work():
+    messagebox.showinfo("Accepting Fate",
+                        "You finally realize that something's up and it's"
+                        " about time you took action. You head to the "
+                        "headquarters to finalize your decision.")
+def confess():
+    
+################ Robat's Row Row Row your boat gently down the stream robat Functions #####################
 def iquit():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
