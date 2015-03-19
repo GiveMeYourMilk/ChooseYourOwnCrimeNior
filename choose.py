@@ -19,7 +19,7 @@ w.pack()
 
 # Beginning Dialogue
 os.startfile('coltrane.mp3')
-messagebox.showinfo("...", "July 10th, 1999. A day at work.")
+messagebox.showinfo("...", "July 10th, 2023. A day at work.")
 messagebox.showinfo("Prologue", "'Congratulations on this "
                         "new position. It's gonna be a brand n"
                         "ew start for you as one of my detecti"
@@ -200,7 +200,7 @@ def work():
                         " about time you took action. You head to the "
                         "headquarters to finalize your decision.")
 def confess():
-    
+    null
 ################ Robat's Row Row Row your boat gently down the stream robat Functions #####################
 def iquit():
     choice = simpledialog.askinteger("Choose wisely",
@@ -215,19 +215,31 @@ def iquit():
     else:
         choice2()
 
-################ Student D Functions #####################
+################ GiveMeYourMilk Functions #####################
 def ivengence():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        vignore()
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        vfollow()
+
     else:
-        choice1()
+        ivengence()
+
+def vignore():
+    messagebox.showinfo("END",
+                        "put in an end here")
+def vfollow():
+    choice = simpledialog.askinteger("Rooftop",
+                                     "story goes here(capture hitman on rooftop)/"
+                                     " Kill him(1) or Question him(2)")
+    if (choice == 1):
+        fkill()
+
+    elif (choice == 2):
+        fquestion()
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System
