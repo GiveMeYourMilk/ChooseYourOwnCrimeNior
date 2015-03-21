@@ -200,7 +200,33 @@ def work():
                         " about time you took action. You head to the "
                         "headquarters to finalize your decision.")
 def confess():
-    null
+    messagebox.showinfo("A Stupid Liar",
+                        "You lose your mind and confess to the two murders that"
+                        " have happened. Absolutely no one believes you and"
+                        " this results you being stripped of your badge "
+                        "and sent to an asylum for mental analysis. Thus"
+                        " ends your career as a detective.")
+    messagebox.showinfo("A Stupid Liar",
+                        "INSANITY ENDING")
+def ignore2():
+    messagebox.showinfo("The Next Victim",
+                        "Late at night, you're looking at other cases th"
+                        "at might be available for you. Suddenly the door"
+                        "\n opens." + \
+                        "\n 'Detective " + name + "?'")
+    messagebox.showinfo("The Next Victim",
+                        "Turning around you answer the person who"
+                        " called. 'Yes that's me. How may I-")
+    os.startfile('gunshot.mp3')
+    messagebox.showinfo("The Next Victim", "BANG")
+    messagebox.showinfo("The Next Victim",
+                        "Bleeding out, you see the killer walking away "
+                        "with confidence. 'Idiot', you think to yourself."
+                        " Pulling out your gun you shoot the killer who"
+                        " instantly goes down. You smile."
+                        " At least you go down as a hero.")
+    messagebox.showinfo("The Next Victim",
+                        "FALSE HERO ENDING")
 ################ Robat's Row Row Row your boat gently down the stream robat Functions #####################
 def iquit():
     choice = simpledialog.askinteger("Choose wisely",
