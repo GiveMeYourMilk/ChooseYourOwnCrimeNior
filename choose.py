@@ -242,6 +242,7 @@ def iquit():
         choice2()
 
 ################ GiveMeYourMilk Functions #####################
+        #204863 204863 204863 204863 204863 204863
 def ivengence():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
@@ -269,13 +270,23 @@ def vignore():
                         " dream is lost.")
 def vfollow():
     choice = simpledialog.askinteger("Rooftop",
-                                     "story goes here(capture hitman on rooftop)/"
-                                     "/n Kill him(1) or Question him(2)")
+                                     "story goes here(capture hitman on rooftop)"
+                                     "\n Kill him(1) or Question him(2)")
     if (choice == 1):
         fkill()
 
     elif (choice == 2):
         fquestion()
+
+def fkill():
+    choice = simpledialog.askinteger("Killer",
+                                     "What will you do with his body?"
+                                     "\n Hide it(1) or Display it(2)")
+    if (choice == 1):
+        khide()
+
+    elif (choice == 2):
+        kdisplay()
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System
