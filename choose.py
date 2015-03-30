@@ -270,7 +270,7 @@ def vignore():
                         " dream is lost.")
 def vfollow():
     choice = simpledialog.askinteger("Rooftop",
-                                     "story goes here(capture hitman on rooftop)"
+                                     "You catch hitman on rooftop"
                                      "\n Kill him(1) or Question him(2)")
     if (choice == 1):
         fkill()
@@ -293,6 +293,19 @@ def fkill():
 
     else:
         fkill()
+
+def khide():
+    messagebox.showinfo("END",
+                        "You hide the body where it"
+                        " will never be found. Your guilt won't let you"
+                        " show your face work anymore now")
+
+def kdisplay():
+    messagebox.showinfo("END",
+                        "With the body so visble it isn't"
+                        " hard for the police to discover"
+                        " enough evidence to put you away"
+                        " for a long time")
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System
