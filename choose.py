@@ -74,6 +74,20 @@ def intro():
         intro()
 
 ################ Amiel's Functions #####################
+
+    ### MAP OF FUNCTIONS ###
+"""
+]1_1
+    ]2_1
+        ]3_1
+            ]4_1
+    ]2_2
+        ]3_2
+            ]4_2
+                ]5_1
+    ]2_3
+        ]2_2
+"""
 def iwork():
     messagebox.showinfo("Secrecy and Solitude", "You decide to work in"
                         " secrecy and solitude. What is your next choice?")
