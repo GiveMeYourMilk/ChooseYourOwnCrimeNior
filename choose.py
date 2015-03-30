@@ -229,15 +229,15 @@ def ignore2():
                         "FALSE HERO ENDING")
 ################ Robat's Row Row Row your boat gently down the stream robat Functions #####################
 def iquit():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("Quiter",
+                                     "You decide that the life you've always wanted "
+                                     "as a detective is not suitable to live. It's too dangerous "
+                                     "for you to take the risk of working there after someone just got killed."
+                                     "\n You realize you don't have milk at home. )
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
-
+        
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        
     else:
         choice2()
 
