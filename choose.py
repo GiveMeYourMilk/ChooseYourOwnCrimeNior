@@ -278,6 +278,9 @@ def vfollow():
     elif (choice == 2):
         fquestion()
 
+    else:
+        vfollow()
+
 def fkill():
     choice = simpledialog.askinteger("Killer",
                                      "What will you do with his body?"
@@ -287,6 +290,9 @@ def fkill():
 
     elif (choice == 2):
         kdisplay()
+
+    else:
+        fkill()
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System
