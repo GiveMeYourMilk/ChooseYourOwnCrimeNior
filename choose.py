@@ -74,12 +74,6 @@ def intro():
         intro()
 
 ################ Amiel's Functions #####################
-
-# I still need to finish THESE before I can continue
-"""
-]iwork2_2, 3
-]iwork4_1
-"""
 def iwork():
     messagebox.showinfo("Secrecy and Solitude", "You decide to work in"
                         " secrecy and solitude. What is your next choice?")
@@ -119,8 +113,8 @@ def iwork2_1():
                             " Your story ends here")
     elif (choice == 2):
         messagebox.showinfo("Secrecy and Solitude",
-                            "Robert Malcone, 13 counts of armed robbery, 2 counts"
-                            "of manslaughter, and suspect for dozens of murder"
+                            "Robert Malcone, 13 counts of armed robbery, 2 counts "
+                            "of manslaughter, and suspect for dozens of murder "
                             "cases; street alias, 'The Gun'"
                             "\n\nRobert must be the hired hand for whoever 'S' is.")
         messagebox.showinfo("Secrecy and Solitude",
@@ -130,7 +124,50 @@ def iwork2_1():
         iwork3_1()
     else:
         iwork2_1()
-    
+
+def iwork2_2():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) 'Hey, Giordini, I have some questions to ask you!'"
+                                     "\n(2) Oh... this dirtbag is just ASKING FOR IT! (knuckle cracking)")
+    if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "He bolts off")
+        iwork3_2()
+    elif (choice == 2):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "The fight is over quickly, for his only real targets of his 'collections' are "
+                            "the elderly...")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "Although it seemed right at the time, this was in fact a poor choice. "
+                            "Giordini now refuses to cooperate with the police in the attempt "
+                            "to find out who really killed your boss.")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "Along with all this, you are being sued by copious amounts of "
+                            "agencies, the likes of many that you had not even knew existed. "
+                            "It seems your days of working detective are over.")
+    else:
+        iwork2_2()
+
+def iwork2_3():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) Reinterrogate your prime suspect. Discuss new information "
+                                     "with him (get some answers)"
+                                     "\n (2) Turn over new evidence to the police, a full force is "
+                                     "stronger than one man")
+    if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You see him in the nearby alleyway, on the way to"
+                            " his home, harassing an innocent woman.")
+        iwork2_2()
+    elif (choice == 2):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "When you turn over the case, your co-workers could see that "
+                            "this case was distressing you, so they relieve you when they "
+                            "get access to this new evidence. You can no longer work on the "
+                            "case")
+    else:
+        iwork2_3()
+
 def iwork3_1():
     choice = simpledialog.askinteger("Secrecy and Solitude",
                                      "(1) Follow up on Roberts possible ties to the hit"
@@ -154,6 +191,107 @@ def iwork3_1():
                             " away from you. You lose control of the case")
     else:
         iwork3_1()
+
+def iwork3_2():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) Chase him"
+                                     "\n(2) Shoot him")
+    if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You follow him to his hideout, and hear ludicrous amounts of cursing, "
+                            "then you hear Giordini talking to one another")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "'Did that cop follow you here?' 'Who do you take me for?, I'm 'The Gun', "
+                            "Its not hard to outrun a pig")
+        iwork4_2()
+    elif (choice == 2):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "He died, what did you expect")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You lost your only lead because you forgot what a gun does. Good job.")
+    else:
+        iwork3_2()
+
+def iwork4_1():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) End his life"
+                                     "\n(2) Bring him in yourself")
+    if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "In a storm of rage, and short-sightedness, you pull the trigger. "
+                            "This for only a breif moment are you relieved as you are brought "
+                            "into custody yourself for murder in the first degree.")
+    elif (choice == 2):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You bring him in, and are greeted with promotion, relief and "
+                            "celebrations of all sorts. You find that bringing him in has alleviated "
+                            "your troubles and you can finally move on. Thorugh this capture you "
+                            "end up taking the position as lead detective, and replace your old "
+                            "boss.")
+    else:
+        iwork4_1()
+
+def iwork4_2():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) Call for backup (running for police is a probable cause "
+                                     "for a search warrent)"
+                                     "\n(2) Go in vigilante, you can't risk losing you handle on this "
+                                     "case")
+    if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "They hear you calling for backup outside of their hideout. "
+                            "It seems you still haven't mastered the art of not talking loudly. "
+                            "They bring you in before you can disclose the location of the "
+                            "hideout to the police.")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "After hours of torture, they assume you are just a goon of the "
+                            "police, and that you know nothing. They let you go, but not "
+                            "before adequate bruising")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You overheard their chatter as they move their hideout to a "
+                            "new location, 'Hey Silvone, this guy is just a dunce, knows "
+                            "nothing. Wouldn't want more heat drawn to another murder. "
+                            "*chatter*, yeah we messed him up good, we wont talk.")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "'SILVONE', you think in your head (as you learned your lesson "
+                            "about talking loudly last time), he is the head of the mafia, and "
+                            "now we have probable cause to search his offices. We can finally "
+                            "bring him down!")
+        iwork5_1()
+    elif (choice == 2):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You get shot. C'mon it's a hideout of armed assailants.")
+    else:
+        iwork4_2()
+
+def iwork5_1():
+    choice = simpledialog.askinteger("Secrecy and Solitude",
+                                     "(1) 'Silvone will get out if I don't take care of him; I need to "
+                                     " kill him so his lawyers don't get him out again.'"
+                                     "\n(2) 'This time, we have REAL evidence, we need to pursue "
+                                     "the LEGAL path")
+    if (choice == 1):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You are there, holding a gun to his face, past all his handcuffed "
+                            "goons, all struggling to make sure you don't kill thier meal ticket. "
+                            "You do the only thing left and pull the trigger.")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "BANG, Silvone is dead, and now you are in jail, good going.")
+    elif (choice == 2):
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You go back over evidence, and discover that the gun the "
+                            "hitman used on your superior and the guns used in crimes "
+                            "assosiated with 'S' are in fact from the same weapon. The "
+                            "hitman is just a hired hand and Silvone, and now you have the "
+                            "real evidence to prove the injustice Silvone has caused.")
+        messagebox.showinfo("Secrecy and Solitude",
+                            "You bring him in, and are greeted with promotion, relief and "
+                            "celebrations of all sorts. You find that bringing him in has alleviated "
+                            "your troubles and you can finally move on. Thorugh this capture you "
+                            "end up taking the position as lead detective, and replace your old "
+                            "boss.")
+    else:
+        iwork5_1()
 ################ Niraj's Functions #####################
 def iignore():
     messagebox.showinfo("The Detective Allergic to Murders",
