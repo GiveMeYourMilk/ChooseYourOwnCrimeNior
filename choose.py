@@ -256,11 +256,21 @@ def ivengence():
 
 def vignore():
     messagebox.showinfo("END",
-                        "put in an end here")
+                        "You look at the letter, put it down and"
+                        " walk away. That letter isn't what you "
+                        "need right now. You're barely a detective "
+                        "you're not a world class ninja spy assassin."
+                        " As you walk away you realise that was it,"
+                        " you're last chance to live out your dream"
+                        " of being a classic detective like the ones"
+                        " your grandfather would tell you about watching"
+                        " in classic films and now it's over now. You walk home"
+                        " with your head hung low, knowing that your"
+                        " dream is lost.")
 def vfollow():
     choice = simpledialog.askinteger("Rooftop",
                                      "story goes here(capture hitman on rooftop)/"
-                                     " Kill him(1) or Question him(2)")
+                                     "/n Kill him(1) or Question him(2)")
     if (choice == 1):
         fkill()
 
