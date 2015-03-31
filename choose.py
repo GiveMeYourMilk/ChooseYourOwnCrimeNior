@@ -1,11 +1,13 @@
 # Choose.py
-# by Wylder G., Tabor F., 
+# by Wylder G., Tabor F., Amiel I., Niraj M.
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
 # Music
 'FL Studios Gunshot FX'
 'John Coltrane: In a Sentimental Mood'
+'Pokemon: Wallys Theme'
+'Seinfeld Theme'
 
 # Import Statements
 from tkinter import *
@@ -199,21 +201,58 @@ def work():
                         "You finally realize that something's up and it's"
                         " about time you took action. You head to the "
                         "headquarters to finalize your decision.")
+    messagebox.showinfo("Accepting Fate",
+                        "\n'Hey, bro', you call out to your partner." + \
+                        "\n"
+                        "\n'Yo, what up?', he replies."
+                        "\n"
+                        "\n'I'm gonna take up that case. Regarding the murder"
+                        " in the agency.")
+    messagebox.showinfo("Accepting Fate",
+                        "At first, your partner looks at you shocked. "
+                        "Then he smiles, as if not surprised by your deci"
+                        "sion. 'Heh, it's about time. Here's all the data"
+                        ". The crime scenes are still fresh so you should che"
+                        "ck them out before they go stale. Time to show off "
+                        "your skills rookie.'"
+                        "\n" + \
+                        "\nYou look at him and smile. Turning around you begin"
+                        " the investigation.")
+    victims()
+def victims():
+    choice = simpledialog.askinteger("Accepting Fate",
+                                     "\nYou check the files and see there's not" + \
+                                     " much to go off of. You're going to have to"
+                                     " check out the victims yourself. But which one?"
+                                     "\n"
+                                     "\n(1)Check out the first victim"
+                                     "\n(2)Check out the second victim")
+    if choice == 1:
+        victim1()
+    elif choice == 2:
+        victim2()
+    else:
+        victims()
+    
+
 def confess():
+    os.startfile('seinfeld.mp3')
     messagebox.showinfo("A Stupid Liar",
                         "You lose your mind and confess to the two murders that"
                         " have happened. Absolutely no one believes you and"
                         " this results you being stripped of your badge "
                         "and sent to an asylum for mental analysis. Thus"
-                        " ends your career as a detective.")
+                        " ends your career as a detective. Oh, you also"
+                        " compromised  all other existing relationships.")
     messagebox.showinfo("A Stupid Liar",
                         "INSANITY ENDING")
-def ignore2():
+def nope():
     messagebox.showinfo("The Next Victim",
                         "Late at night, you're looking at other cases th"
                         "at might be available for you. Suddenly the door"
-                        "\n opens." + \
-                        "\n 'Detective " + name + "?'")
+                        " opens." + \
+                        "\n"
+                        "\n'Detective " + name + "?'")
     messagebox.showinfo("The Next Victim",
                         "Turning around you answer the person who"
                         " called. 'Yes that's me. How may I-")
@@ -225,6 +264,7 @@ def ignore2():
                         " Pulling out your gun you shoot the killer who"
                         " instantly goes down. You smile."
                         " At least you go down as a hero.")
+    os.startfile('falsehero.mp3')
     messagebox.showinfo("The Next Victim",
                         "FALSE HERO ENDING")
 ################ Robat's Row Row Row your boat gently down the stream robat Functions #####################
