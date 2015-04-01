@@ -379,14 +379,83 @@ def victims():
                                      " much to go off of. You're going to have to"
                                      " check out the victims yourself. But which one?"
                                      "\n"
-                                     "\n(1)Check out the first victim"
-                                     "\n(2)Check out the second victim")
+                                     "\n(1)Check out the first victim, your boss"
+                                     "\n(2)Check out the second victim,")
     if choice == 1:
         victim1()
     elif choice == 2:
         victim2()
     else:
         victims()
+def victim2():
+    messagebox.showinfo("Second Hit",
+                        "You decide to check up on the second victim. Looking"
+                        " at the files, you see he was a moderately new detecti"
+                        "ve, and feel a pang of guilt for not taking the case "
+                        "sooner. Shaking off the feeling, you approach the "
+                        "crime scene and show your badge.")
+    messagebox.showinfo("Second Hit",
+                        "\n'Sir!', an officer says, approaching you. 'We've fou" + \
+                        "nd some evidence on the killer. It's seems to be a"
+                        " scrapbook.'"
+                        "\n"
+                        "\n'Thank you', you say, taking the notebook. 'Is ther"
+                        "e any other evidence? Fingerprints, weapons, or some"
+                        "thing of the sort?'"
+                        "\n"
+                        "\n'No sir', he answers. 'Whoever this guy was, he ma"
+                        "de a slip and this is all we got.'")
+    messagebox.showinfo("Second Hit",
+                        "Thanking the officer you walk away. Evidence is a "
+                        "good start. Looking out, you see that the commotion aroun"
+                        "d the crime scene has died down. The day's almost"
+                        " ended.")
+    vic2()
+    
+def vic2():
+    choice = simpledialog.askinteger("Second Hit",
+                                     "\nWhat will you do?" + \
+                                     "\n(1)Go home and rest for the day"
+                                     "\n(2)Investigate the evidence imme"
+                                     "diately")
+    if choice == 1:
+        lose()
+    elif choice == 2:
+        killer()
+    else:
+        vic2()
+def lose():
+    messagebox.showinfo("The Only Evidence",
+                        "Heading home, you take this evidence with you"
+                        ". Once home you head inside and crash on your"
+                        " couch, instantly falling asleep from all the"
+                        " stress. 'So sleepy' you think, drifting away.")
+    messagebox.showinfo("The Only Evidence",
+                        "All of a sudden, you hear a large crash. Instantly"
+                        " getting up, you look around and see a man stormin"
+                        "g your house. He points a gun at you while you ner"
+                        "vously watch him.")
+    messagebox.showinfo("The Only Evidence",
+                        "\n'Sorry about this', the man says. 'I forgot this at"
+                        " that detective agency.'" + \
+                        "\n"
+                        "\n'You're the shooter?' you ask in shock."
+                        "\n"
+                        "\n'The one and only', he replies. 'I normally would"
+                        " leave you alone, but just in case...' He points hi"
+                        "s gun at you and shoots you in the leg.")
+    messagebox.showinfo("The Only Evidence",
+                        "You crumple over and are helpless to watch the killer"
+                        " take the scrapbook. The only evidence you had against"
+                        " the killer is now gone. In the near future, you are"
+                        " known as a failed detective and continued killings "
+                        "occur. This takes a big hit on you and you vow never"
+                        " to take another case ever again.")
+    os.startfile('fail.mp3')
+    messagebox.showinfo("The Only Evidence",
+                        "FAILED DETECTIVE ENDING")
+        
+    
     
 
 def confess():
