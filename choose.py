@@ -456,13 +456,13 @@ def vignore():
                         " As you walk away you realise that was it,"
                         " you're last chance to live out your dream"
                         " of being a classic detective like the ones"
-                        " your grandfather would tell you about watching"
+                        " your grandfather would tell you about and show you"
                         " in classic films and now it's over now. You walk home"
                         " with your head hung low, knowing that your"
                         " dream is lost.")
 def vfollow():
     choice = simpledialog.askinteger("Rooftop",
-                                     "You catch hitman on rooftop"
+                                     "You catch the killer on rooftop"
                                      "\n Kill him(1) or Question him(2)")
     if (choice == 1):
         fkill()
@@ -498,6 +498,29 @@ def kdisplay():
                         " hard for the police to discover"
                         " enough evidence to put you away"
                         " for a long time")
+
+def fquestion():
+    choice = simpledialog.askinteger("Rooftop",
+                                     "You discover he was just a hitman for"
+                                     " Silvone. Silvone was the biggest mob"
+                                     " in the city. He was the man Robinson"
+                                     " was trying to bring down when he was"
+                                     " shot. Silvone had been untouchable, "
+                                     "but Robinson had finally got something"
+                                     " on him. You cuff the hitman to the rooftop"
+                                     " and leave his note on the office door."
+                                     " You finally had something on Silvone,"
+                                     " but you're not sure it's enough. You"
+                                     " need evidence from the source. "
+                                     "\n (1) check the local crime bar (2) check the mafia hideout")
+    if (choice == 1):
+        qbar()
+
+    elif (choice == 2):
+        qmafia()
+
+    else:
+        fquestion()
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System
