@@ -1,11 +1,19 @@
 # Choose.py
-# by Wylder G., Tabor F., 
+# by Wylder G., Tabor F., Amiel I., Niraj M.
+    ########################################
+    #Starring Niraj M. as Malin383         #
+    #And Tabor F. as robat81               #
+    #Also Amiel I. as amiel445566          #
+    #featuring Wylder G. as GiveMeYourMilk #
+    ########################################
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
 # Music
 'FL Studios Gunshot FX'
 'John Coltrane: In a Sentimental Mood'
+'Pokemon: Wallys Theme'
+'Seinfeld Theme'
 
 # Import Statements
 from tkinter import *
@@ -18,42 +26,44 @@ w = Label(root, text="Choose Your Own Adventure")
 w.pack()
 
 # Beginning Dialogue
-os.startfile('coltrane.mp3')
-messagebox.showinfo("...", "July 10th, 2023. A day at work.")
-messagebox.showinfo("Prologue", "'Congratulations on this "
-                        "new position. It's gonna be a brand n"
-                        "ew start for you as one of my detecti"
-                        "ves. Hopefully things don't get too bo"
-                        "ring for you. For now, rest up until "
-                        "tomorrow. Enjoy your night.'")
-name = simpledialog.askstring("Prologue", "'By the way, what was"
-                                   " your name again?")
-messagebox.showinfo("Prologue", "" + name + ", I'll remember that.")
-messagebox.showinfo("Prologue", "Later that night.")
-messagebox.showinfo("Prologue", "'Too many papers tonight..."
-                        " Hey, excuse me sir. No visitors after-")
-os.startfile('gunshot.mp3')
-messagebox.showinfo("Prologue", "BANG")
-messagebox.showinfo("A New Case", "The next day.")
-os.startfile('coltrane.mp3')
-messagebox.showinfo("A New Case", "You're excited for a new"
-                        " start at your workplace. In your car, "
-                        "you notice sirens near the building an"
-                        "d as you get closer see investigators. "
-                        "As you park your car and rush to the s"
-                        "cene, you can't help but think your fi"
-                        "rst case might be coming sooner than y"
-                        "ou thought.")
-messagebox.showinfo("A New Case", "'What happened?' you ask one of the"
-                        " nearby officers.")
-messagebox.showinfo("A New Case", "\n'The boss, he was shot and killed', he answers."
-                        "\n    " 
-                        "\n'What!?' you yell out in surprise. Quickly you, cal"
-                        "m down and walk a short distance away from everyone."
-                        "You realize that your next move could change you ent"
-                        "ire life and career.")
-
 def intro():
+    os.startfile('coltrane.mp3')
+    messagebox.showinfo("...", "July 10th, 2023. A day at work.")
+    messagebox.showinfo("Prologue", "'Congratulations on this "
+                            "new position. It's gonna be a brand n"
+                            "ew start for you as one of my detecti"
+                            "ves. Hopefully things don't get too bo"
+                            "ring for you. For now, rest up until "
+                            "tomorrow. Enjoy your night.'")
+    name = simpledialog.askstring("Prologue", "'By the way, what was"
+                                       " your name again?")
+    messagebox.showinfo("Prologue", "" + name + ", I'll remember that.")
+    messagebox.showinfo("Prologue", "Later that night.")
+    messagebox.showinfo("Prologue", "'Too many papers tonight..."
+                            " Hey, excuse me sir. No visitors after-")
+    os.startfile('gunshot.mp3')
+    messagebox.showinfo("Prologue", "BANG")
+    messagebox.showinfo("A New Case", "The next day.")
+    os.startfile('coltrane.mp3')
+    messagebox.showinfo("A New Case", "You're excited for a new"
+                            " start at your workplace. In your car, "
+                            "you notice sirens near the building an"
+                            "d as you get closer see investigators. "
+                            "As you park your car and rush to the s"
+                            "cene, you can't help but think your fi"
+                            "rst case might be coming sooner than y"
+                            "ou thought.")
+    messagebox.showinfo("A New Case", "'What happened?' you ask one of the"
+                            " nearby officers.")
+    messagebox.showinfo("A New Case", "\n'The boss, he was shot and killed', he answers."
+                            "\n    " 
+                            "\n'What!?' you yell out in surprise. Quickly you, cal"
+                            "m down and walk a short distance away from everyone."
+                            "You realize that your next move could change you ent"
+                            "ire life and career.")
+    intro2()
+
+def intro2():
     """ Introductory Function -> starts the story going """
 
     choice = simpledialog.askinteger("A New Case", "\n What will you do?" + \
@@ -351,21 +361,127 @@ def work():
                         "You finally realize that something's up and it's"
                         " about time you took action. You head to the "
                         "headquarters to finalize your decision.")
+    messagebox.showinfo("Accepting Fate",
+                        "\n'Hey, bro', you call out to your partner." + \
+                        "\n"
+                        "\n'Yo, what up?', he replies."
+                        "\n"
+                        "\n'I'm gonna take up that case. Regarding the murder"
+                        " in the agency.")
+    messagebox.showinfo("Accepting Fate",
+                        "At first, your partner looks at you shocked. "
+                        "Then he smiles, as if not surprised by your deci"
+                        "sion. 'Heh, it's about time. Here's all the data"
+                        ". The crime scenes are still fresh so you should che"
+                        "ck them out before they go stale. Time to show off "
+                        "your skills rookie.'"
+                        "\n" + \
+                        "\nYou look at him and smile. Turning around you begin"
+                        " the investigation.")
+    victims()
+def victims():
+    choice = simpledialog.askinteger("Accepting Fate",
+                                     "\nYou check the files and see there's not" + \
+                                     " much to go off of. You're going to have to"
+                                     " check out the victims yourself. But which one?"
+                                     "\n"
+                                     "\n(1)Check out the first victim, your boss"
+                                     "\n(2)Check out the second victim,")
+    if choice == 1:
+        victim1()
+    elif choice == 2:
+        victim2()
+    else:
+        victims()
+def victim2():
+    messagebox.showinfo("Second Hit",
+                        "You decide to check up on the second victim. Looking"
+                        " at the files, you see he was a moderately new detecti"
+                        "ve, and feel a pang of guilt for not taking the case "
+                        "sooner. Shaking off the feeling, you approach the "
+                        "crime scene and show your badge.")
+    messagebox.showinfo("Second Hit",
+                        "\n'Sir!', an officer says, approaching you. 'We've fou" + \
+                        "nd some evidence on the killer. It's seems to be a"
+                        " scrapbook.'"
+                        "\n"
+                        "\n'Thank you', you say, taking the notebook. 'Is ther"
+                        "e any other evidence? Fingerprints, weapons, or some"
+                        "thing of the sort?'"
+                        "\n"
+                        "\n'No sir', he answers. 'Whoever this guy was, he ma"
+                        "de a slip and this is all we got.'")
+    messagebox.showinfo("Second Hit",
+                        "Thanking the officer you walk away. Evidence is a "
+                        "good start. Looking out, you see that the commotion aroun"
+                        "d the crime scene has died down. The day's almost"
+                        " ended.")
+    vic2()
+    
+def vic2():
+    choice = simpledialog.askinteger("Second Hit",
+                                     "\nWhat will you do?" + \
+                                     "\n(1)Go home and rest for the day"
+                                     "\n(2)Investigate the evidence imme"
+                                     "diately")
+    if choice == 1:
+        lose()
+    elif choice == 2:
+        killer()
+    else:
+        vic2()
+def lose():
+    messagebox.showinfo("The Only Evidence",
+                        "Heading home, you take this evidence with you"
+                        ". Once home you head inside and crash on your"
+                        " couch, instantly falling asleep from all the"
+                        " stress. 'So sleepy' you think, drifting away.")
+    messagebox.showinfo("The Only Evidence",
+                        "All of a sudden, you hear a large crash. Instantly"
+                        " getting up, you look around and see a man stormin"
+                        "g your house. He points a gun at you while you ner"
+                        "vously watch him.")
+    messagebox.showinfo("The Only Evidence",
+                        "\n'Sorry about this', the man says. 'I forgot this at"
+                        " that detective agency.'" + \
+                        "\n"
+                        "\n'You're the shooter?' you ask in shock."
+                        "\n"
+                        "\n'The one and only', he replies. 'I normally would"
+                        " leave you alone, but just in case...' He points hi"
+                        "s gun at you and shoots you in the leg.")
+    messagebox.showinfo("The Only Evidence",
+                        "You crumple over and are helpless to watch the killer"
+                        " take the scrapbook. The only evidence you had against"
+                        " the killer is now gone. In the near future, you are"
+                        " known as a failed detective and continued killings "
+                        "occur. This takes a big hit on you and you vow never"
+                        " to take another case ever again.")
+    os.startfile('fail.mp3')
+    messagebox.showinfo("The Only Evidence",
+                        "FAILED DETECTIVE ENDING")
+        
+    
+    
+
 def confess():
+    os.startfile('seinfeld.mp3')
     messagebox.showinfo("A Stupid Liar",
                         "You lose your mind and confess to the two murders that"
                         " have happened. Absolutely no one believes you and"
                         " this results you being stripped of your badge "
                         "and sent to an asylum for mental analysis. Thus"
-                        " ends your career as a detective.")
+                        " ends your career as a detective. Oh, you also"
+                        " compromised  all other existing relationships.")
     messagebox.showinfo("A Stupid Liar",
                         "INSANITY ENDING")
-def ignore2():
+def nope():
     messagebox.showinfo("The Next Victim",
                         "Late at night, you're looking at other cases th"
                         "at might be available for you. Suddenly the door"
-                        "\n opens." + \
-                        "\n 'Detective " + name + "?'")
+                        " opens." + \
+                        "\n"
+                        "\n'Detective " + name + "?'")
     messagebox.showinfo("The Next Victim",
                         "Turning around you answer the person who"
                         " called. 'Yes that's me. How may I-")
@@ -377,27 +493,62 @@ def ignore2():
                         " Pulling out your gun you shoot the killer who"
                         " instantly goes down. You smile."
                         " At least you go down as a hero.")
+    os.startfile('falsehero.mp3')
     messagebox.showinfo("The Next Victim",
                         "FALSE HERO ENDING")
 ################ Robat's Row Row Row your boat gently down the stream robat Functions #####################
 def iquit():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("Quiter",
+                                     "You decide that the life you've always wanted "
+                                     "as a detective is not suitable to live. It's too dangerous "
+                                     "for you to take the risk of working there after someone just got killed."
+                                     "\n You realize you don't have milk at home. "
+                                     "\n Do you want to (1) go straight home or (2) stop by the store?")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
-
+        qhome()
+        
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        qstore()
+        
     else:
-        choice2()
+        iquit()
 
-################ GiveMeYourMilk Functions #####################
+def qstore():
+    choice = simpledialog.askinteger("Getting Milk",
+                                     )
+
+def qhome():
+    choice = simpledialog.askinteger("Going Home",
+                                     "You decide to go home but you want to get home quickly. "
+                                     "There is a path up ahead that will get you home much quicker, "
+                                     "but you have never been down it before and it's a bit sketchy."
+                                     "\n Do you want to (1) take the shortcut or (2) go the long route?")
+    if (choice == 1):
+        ()
+        
+    elif (choice == 2):
+        ()
+        
+    else:
+        qhome()
+
+
+
+ ################ GiveMeYourMilk Functions #####################
         #204863 204863 204863 204863 204863 204863
 def ivengence():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("...with vengence",
+                                     "You take this murder personally. It was"
+                                     " your first day and someone went and killed"
+                                     " your boss. You will catch the peson who"
+                                     " did this, no matter what the cost!"
+                                     "\n You sneak past the police tape and"
+                                     " start snooping for evidence. You notice"
+                                     " something under some papers on his desk."
+                                     " A note! \n It reads: \n 'Meet me \n on the"
+                                     " roof \n \n   -R'"
+                                     "\n (1) ignore the letter"
+                                     "\n (2) go to the roof")
     if (choice == 1):
         vignore()
 
@@ -416,13 +567,13 @@ def vignore():
                         " As you walk away you realise that was it,"
                         " you're last chance to live out your dream"
                         " of being a classic detective like the ones"
-                        " your grandfather would tell you about watching"
+                        " your grandfather would tell you about and show you"
                         " in classic films and now it's over now. You walk home"
                         " with your head hung low, knowing that your"
                         " dream is lost.")
 def vfollow():
     choice = simpledialog.askinteger("Rooftop",
-                                     "You catch hitman on rooftop"
+                                     "You catch the killer on rooftop"
                                      "\n Kill him(1) or Question him(2)")
     if (choice == 1):
         fkill()
@@ -459,12 +610,36 @@ def kdisplay():
                         " enough evidence to put you away"
                         " for a long time")
 
+def fquestion():
+    choice = simpledialog.askinteger("Rooftop",
+                                     "You discover he was just a hitman for"
+                                     " Silvone. Silvone was the biggest mob"
+                                     " in the city. He was the man Robinson"
+                                     " was trying to bring down when he was"
+                                     " shot. Silvone had been untouchable, "
+                                     "but Robinson had finally got something"
+                                     " on him. You cuff the hitman to the rooftop"
+                                     " and leave his note on the office door."
+                                     " You finally had something on Silvone,"
+                                     " but you're not sure it's enough. You"
+                                     " need evidence from the source. "
+                                     "\n (1) check the local crime bar (2) check the mafia hideout")
+    if (choice == 1):
+        qbar()
+
+    elif (choice == 2):
+        qmafia()
+
+    else:
+        fquestion()
+
 ################ Winikka's Functions #####################
-# Note this is an alert of the Winikka Broadcast System
-# This is only a test
-# Winikka is not really going to code a function here
-# If he were to code, he would put it here.
-# This is just to show you how to collaborate using Git
+# Note this is an alert of the Winikka Broadcast System  #
+# This is only a test                                    #
+# Winikka is not really going to code a function here    #
+# If he were to code, he would put it here.              #
+# This is just to show you how to collaborate using Git  #
+##########################################################
 
 ################ Main #####################
 intro()
