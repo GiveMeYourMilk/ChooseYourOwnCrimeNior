@@ -507,8 +507,18 @@ def iquit():
 ################ GiveMeYourMilk Functions #####################
         #204863 204863 204863 204863 204863 204863
 def ivengence():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("...with vengence",
+                                     "You take this murder personally. It was"
+                                     " your first day and someone went and killed"
+                                     " your boss. You will catch the peson who"
+                                     " did this, no matter what the cost!"
+                                     "\n You sneak past the police tape and"
+                                     " start snooping for evidence. You notice"
+                                     " something under some papers on his desk."
+                                     " A note! \n It reads: \n 'Meet me \n on the"
+                                     " roof \n \n   -R'"
+                                     "\n (1) ignore the letter"
+                                     "\n (2) go to the roof")
     if (choice == 1):
         vignore()
 
