@@ -233,15 +233,39 @@ def iquit():
                                      "You decide that the life you've always wanted "
                                      "as a detective is not suitable to live. It's too dangerous "
                                      "for you to take the risk of working there after someone just got killed."
-                                     "\n You realize you don't have milk at home. )
+                                     "\n You realize you don't have milk at home. "
+                                     "\n Do you want to (1) go straight home or (2) stop by the store?")
     if (choice == 1):
+        qhome()
         
     elif (choice == 2):
+        qstore()
         
     else:
-        choice2()
+        iquit()
 
-################ GiveMeYourMilk Functions #####################
+def qstore():
+    choice = simpledialog.askinteger("Getting Milk",
+                                     )
+
+def qhome():
+    choice = simpledialog.askinteger("Going Home",
+                                     "You decide to go home but you want to get home quickly. "
+                                     "There is a path up ahead that will get you home much quicker, "
+                                     "but you have never been down it before and it's a bit sketchy."
+                                     "\n Do you want to (1) take the shortcut or (2) go the long route?")
+    if (choice == 1):
+        ()
+        
+    elif (choice == 2):
+        ()
+        
+    else:
+        qhome()
+
+
+
+ ################ GiveMeYourMilk Functions #####################
         #204863 204863 204863 204863 204863 204863
 def ivengence():
     choice = simpledialog.askinteger("Choose wisely",
