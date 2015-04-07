@@ -1,5 +1,11 @@
 # Choose.py
 # by Wylder G., Tabor F., Amiel I., Niraj M.
+    ########################################
+    #Starring Niraj M. as Malin383         #
+    #And Tabor F. as robat81               #
+    #Also Amiel I. as amiel445566          #
+    #featuring Wylder G. as GiveMeYourMilk #
+    ########################################
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
@@ -361,7 +367,7 @@ def work():
                         "\n'Yo, what up?', he replies."
                         "\n"
                         "\n'I'm gonna take up that case. Regarding the murder"
-                        " in the agency.")
+                        " in the agency.'")
     messagebox.showinfo("Accepting Fate",
                         "At first, your partner looks at you shocked. "
                         "Then he smiles, as if not surprised by your deci"
@@ -380,13 +386,69 @@ def victims():
                                      " check out the victims yourself. But which one?"
                                      "\n"
                                      "\n(1)Check out the first victim, your boss"
-                                     "\n(2)Check out the second victim,")
+                                     "\n(2)Check out the second victim")
     if choice == 1:
         victim1()
     elif choice == 2:
         victim2()
     else:
         victims()
+def victim1():
+    messagebox.showinfo("First Hit",
+                        "Deciding to check on the first victim, you walk tow"
+                        "ards the crime scene. You look at the files and see"
+                        " that there's not much to go off of. Jack Robinson, th"
+                        "e man  that gave you this job. Trying to shake off the"
+                        " feeling of nostalgia, you reach the crime scene and"
+                        " investigate.")
+    messagebox.showinfo("First Hit",
+                        "'What's this?' you think to yourself, seeing a small "
+                        "letter, seemingly hiding in the corner. A lot of the"
+                        " commotion is with the fresh second victim, so this"
+                        " crime scene is seemingly empty. Picking up the letter"
+                        ", you begin to read it to yourself. Or at least"
+                        ", what's legible.")
+    messagebox.showinfo("First Hit",
+                        "\nTo: Si-----" + \
+                        "\n"
+                        "\nI'll g---ly take that deal. In fact, j--t get the"
+                        " money read- by tomorrow. The job will be done before"
+                        " yo-'r- even awake."
+                        "\n"
+                        "\nRo--er- Mal-c--e")
+    vic1()
+
+def vic1():    
+    choice = simpledialog.askinteger("First Hit",
+                                     "\nYou can clearly see that two people w"
+                                     "ere involved and what the plot was but "
+                                     "the names are not very clear. It's time "
+                                     "to try and close in on the suspects."
+                                     "\n"
+                                     "\n(1)Give the letter to a lead analyzer"
+                                     "\n(2)Investigate the crime scene further")
+    if choice == 1:
+        analyze()
+
+    elif choice == 2:
+        investigate()
+
+    else:
+        vic1()
+def investigate():
+    messagebox.showinfo("Third Hit",
+                        "\nDeciding to investigate further, you look for more ev" + \
+                        "idence but fail to find any. Turning to leave, you come"
+                        " face to face with a pistol."
+                        "\n"
+                        "\n'Ha, forgot to send that letter', the shooter tells you."
+                        " 'Robert Malcone by the way.'")
+    messagebox.showinfo("Third Hit",
+                        "Pulling the trigger, no chance of survival is possible."
+                        " Within a minute, you die and the only piece of eviden"
+                        "ce is gone and the hitman is now free.")
+    messagebox.showinfo("Third Hit",
+                        "INVESTIGATOR ENDING")
 def victim2():
     messagebox.showinfo("Second Hit",
                         "You decide to check up on the second victim. Looking"
@@ -454,9 +516,8 @@ def lose():
     os.startfile('fail.mp3')
     messagebox.showinfo("The Only Evidence",
                         "FAILED DETECTIVE ENDING")
-        
-    
-    
+#def killer():
+ #   messagebox.showinfo("The Killer",
 
 def confess():
     os.startfile('seinfeld.mp3')
@@ -523,14 +584,30 @@ def qhome():
                                      "\n but you have never been down it before and it's a bit sketchy."
                                      "\n Do you want to (1) take the shortcut or (2) go the long route?")
     if (choice == 1):
-        ()
+        qshortcut()
         
     elif (choice == 2):
-        ()
+        qnormal()
         
     else:
         qhome()
 
+def qnormal():
+    choice = simpledialog.askinteger("Going Home",
+                                     "Theres no point in going down some sketchy road at dusk."
+                                     "\n Any other day you would have been all over this new road,"
+                                     "\n exploring this path and trying to play some detective game"
+                                     "\n as you waited to hear back from the agency. However, that"
+                                     "\n is all behind you now. You start to wonder how your life"
+                                     "\n will change, after you quit the job you worked so hard to get."
+                                     "\n Little did you know this was the last thing that was on your mind."
+                                     "\n Even though you went the normal way home you still felt rushed."
+                                     "\n Quickly you decide to cross the street. As you cross the street,"
+                                     "\n you feel a sensation. You look up and all you see is the "
+                                     "\n blinding lights of a car. Immediately, your world goes black...")
+
+    messagebox.showinfo("Going Home",
+                        "SORROW AND REGRET ENDING")
 
 
  ################ GiveMeYourMilk Functions #####################
@@ -633,11 +710,12 @@ def fquestion():
         fquestion()
 
 ################ Winikka's Functions #####################
-# Note this is an alert of the Winikka Broadcast System
-# This is only a test
-# Winikka is not really going to code a function here
-# If he were to code, he would put it here.
-# This is just to show you how to collaborate using Git
+# Note this is an alert of the Winikka Broadcast System  #
+# This is only a test                                    #
+# Winikka is not really going to code a function here    #
+# If he were to code, he would put it here.              #
+# This is just to show you how to collaborate using Git  #
+##########################################################
 
 ################ Main #####################
 intro()
