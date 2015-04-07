@@ -576,6 +576,18 @@ def qstore():
                                      "\n around a bit you finally find the dairy aisle,"
                                      "\n however they only have one gallon of each milk type"
                                      "\n Do you take the (1) 1% milk, (2) 2% milk or (3) the Whole milk")
+    if (choice == 1):
+        q1%()
+        
+    elif (choice == 2):
+        q2%()
+        
+    elif (choice == 2):
+        qwhole()
+        
+    else:
+        qstore()
+
 
 def qhome():
     choice = simpledialog.askinteger("Going Home",
@@ -593,21 +605,27 @@ def qhome():
         qhome()
 
 def qnormal():
-    choice = simpledialog.askinteger("Going Home",
-                                     "Theres no point in going down some sketchy road at dusk."
-                                     "\n Any other day you would have been all over this new road,"
-                                     "\n exploring this path and trying to play some detective game"
-                                     "\n as you waited to hear back from the agency. However, that"
-                                     "\n is all behind you now. You start to wonder how your life"
-                                     "\n will change, after you quit the job you worked so hard to get."
-                                     "\n Little did you know this was the last thing that was on your mind."
-                                     "\n Even though you went the normal way home you still felt rushed."
-                                     "\n Quickly you decide to cross the street. As you cross the street,"
-                                     "\n you feel a sensation. You look up and all you see is the "
-                                     "\n blinding lights of a car. Immediately, your world goes black...")
+    messagebox.showinfo("Going Home",
+                        "Theres no point in going down some sketchy road at dusk."
+                        "\n Any other day you would have been all over this new road,"
+                        "\n exploring this path and trying to play some detective game"
+                        "\n as you waited to hear back from the agency. However, that"
+                        "\n is all behind you now. You start to wonder how your life"
+                        "\n will change, after you quit the job you worked so hard to get."
+                        "\n Little did you know this was the last thing that was on your mind."
+                        "\n Even though you went the normal way home you still felt rushed."
+                        "\n Quickly you decide to cross the street. As you cross the street,"
+                        "\n you feel a sensation. You look up and all you see is the "
+                        "\n blinding lights of a car. Immediately, your world goes black...")
 
     messagebox.showinfo("Going Home",
                         "SORROW AND REGRET ENDING")
+
+
+def qshortcut():
+    choice = simpledialog.askinteger("Going Home",
+                                     "")
+
 
 
  ################ GiveMeYourMilk Functions #####################
