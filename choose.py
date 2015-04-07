@@ -579,14 +579,30 @@ def qhome():
                                      "but you have never been down it before and it's a bit sketchy."
                                      "\n Do you want to (1) take the shortcut or (2) go the long route?")
     if (choice == 1):
-        ()
+        qshortcut()
         
     elif (choice == 2):
-        ()
+        qnormal()
         
     else:
         qhome()
 
+def qnormal():
+    choice = simpledialog.askinteger("Going Home",
+                                     "Theres no point in going down some sketchy road at dusk."
+                                     "\n Any other day you would have been all over this new road,"
+                                     "\n exploring this path and trying to play some detective game"
+                                     "\n as you waited to hear back from the agency. However, that"
+                                     "\n is all behind you now. You start to wonder how your life"
+                                     "\n will change, after you quit the job you worked so hard to get."
+                                     "\n Little did you know this was the last thing that was on your mind."
+                                     "\n Even though you went the normal way home you still felt rushed."
+                                     "\n Quickly you decide to cross the street. As you cross the street,"
+                                     "\n you feel a sensation. You look up and all you see is the "
+                                     "\n blinding lights of a car. Immediately, your world goes black...")
+
+    messagebox.showinfo("Going Home",
+                        "SORROW AND REGRET ENDING")
 
 
  ################ GiveMeYourMilk Functions #####################
