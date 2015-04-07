@@ -552,6 +552,7 @@ def nope():
     messagebox.showinfo("The Next Victim",
                         "FALSE HERO ENDING")
 ################ Robat's Row Row Row your boat gently down the stream robat Functions #####################
+    ### TEST ###
 def iquit():
     choice = simpledialog.askinteger("Quiter",
                                      "You decide that the life you've always wanted "
