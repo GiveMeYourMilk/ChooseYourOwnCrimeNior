@@ -409,7 +409,7 @@ def victim1():
                         ", you begin to read it to yourself. Or at least"
                         ", what's legible.")
     messagebox.showinfo("First Hit",
-                        "\nTo: Si-----" + \
+                        "\nTo: S------" + \
                         "\n"
                         "\nI'll g---ly take that deal. In fact, j--t get the"
                         " money read- by tomorrow. The job will be done before"
@@ -435,6 +435,42 @@ def vic1():
 
     else:
         vic1()
+def analyze():
+    messagebox.showinfo("Robert Malcone and S",
+                        "Nothing seems to be present, so you decide to leave"
+                        " the crime scene. You decide to give the letter to "
+                        "a lead analyzer, who begins work on it right away. "
+                        "While making yourself a cup of joe, he comes running"
+                        " too you. 'Wow, that was quick' you think.")
+    messagebox.showinfo("Robert Malcone and S",
+                        "\n'Sir! The killer, it's the hitman Robert Malcone!'" + \
+                        " he says with panic in his voice."
+                        "\n"
+                        "\n'Alright, we'll get on that right away...' you begin bu"
+                        "t stop as the analyzer looks very scared.")
+    messagebox.showinfo("Robert Malcone and S",
+                        "\n'What's wrong?' you ask him." + \
+                        "\n"
+                        "\n'The 'S' in the letter it's...it's...it's Silvone."
+                        "\n"
+                        "\nYou drop your mug and stare. A few seconds later, you"
+                        "'re in your car, driving towards the mobsters hideout.")
+    messagebox.showinfo("Robert Malcone and S",
+                        "You have reached his hideout and are ready to go in."
+                        " This is it. With your sleuthing skills, you man"
+                        "age to get in and are there. And who is sitting there?"
+                        " None other than the killer and the boss. Robert Malc"
+                        "one and Silvone.")
+    choice = simpledialog.askinteger("Robert Malcone and S",
+                                     "\nThis is it, the time has come. What" + \
+                                     " will you do?"
+                                     "\n"
+                                     "\n(1)An eye for an eye"
+                                     "\n(2)Close your case")
+    # Wylder, analyze() function  will lead to one of yours functions finish up
+        #next class
+
+    
 def investigate():
     messagebox.showinfo("Third Hit",
                         "\nDeciding to investigate further, you look for more ev" + \
@@ -516,8 +552,35 @@ def lose():
     os.startfile('fail.mp3')
     messagebox.showinfo("The Only Evidence",
                         "FAILED DETECTIVE ENDING")
-#def killer():
- #   messagebox.showinfo("The Killer",
+def killer():
+    messagebox.showinfo("The Killer",
+                        "You decide to investigate the scrapbook immediately,"
+                        " figuring there's no point in resting when you've fou"
+                        "nd some crucial evidence. Grabbing some of the top ev"
+                        "idence analyzers in the agency. By the end of the day,"
+                        " you have a pretty clear idea of who the killer is.")
+    messagebox.showinfo("The Killer",
+                        "Later that evening...")
+    messagebox.showinfo("The Killer",
+                        "\n'Detective " + name + "?'" + \
+                        "\n"
+                        "\n'Yes?'"
+                        "\n"
+                        "\nThe cocking of a pistol. 'I'm here for that scrap"
+                        "book. So if you wanna leave alive, then I suggest-'"
+                        "\n"
+                        "\n'Freeze!'")
+    messagebox.showinfo("The Killer",
+                        "The killer has fallen right into your trap. Suspecting"
+                        " he would come after you next, a decoy was sent in you"
+                        "r place. And the killer was who you suspected it was; "
+                        "Robert Malcone, a hired hitman. The scrapbook was intac"
+                        "t enough that you could recognize similarities as well a"
+                        "s the history. But after interrogation, he refuses to "
+                        "say who hired him. A successful case closed, but a new "
+                        "one has now unfolded.")
+    messagebox.showinfo("The Killer",
+                        "CASE CLOSED? ENDING")
 
 def confess():
     os.startfile('seinfeld.mp3')
