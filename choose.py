@@ -750,8 +750,7 @@ def ivengence():
                                      " something under some papers on his desk."
                                      " A note! \n It reads: \n 'Meet me \n on the"
                                      " roof \n \n   -R'"
-                                     "\n (1) ignore the letter"
-                                     "\n (2) go to the roof")
+                                     "\n (1) ignore the letter (2) go to the roof")
     if (choice == 1):
         vignore()
 
@@ -865,6 +864,45 @@ def qbar():
     
     else:
         qbar()
+
+def bdrink():
+    messagebox.showinfo("END",
+                        "You take a sip of your drink. Fizzy"
+                        " you think to yourself. You see something"
+                        " interesting happening in the back of the"
+                        " bar. You stand up to check it. The room"
+                        " starts spinning. You collapse. As you die"
+                        " you realise that taking drinks from stangers might"
+                        " no be the best idea.")
+
+def bsmart():
+    choice = simpledialog.askinterger("The Ace",
+                                      "You look down at the drink, but decide against it."
+                                      " You turn back around to scope out the bar. There is"
+                                      " massive bar fight going on. You wonder if this kind"
+                                      " of thing happens often. Behind the choas of flying"
+                                      " chairs you see a girl who stands. A brunette in slinky"
+                                      " black dress sipping on something fruity. You rationalise"
+                                      " that talking to her would be very useful to your investagation."
+                                      " You walk back to her avoiding flying bodies. You ask what"
+                                      " she's doing in a place like this. She tells you something"
+                                      " about how her boyfriend asked her to wiat for him here."
+                                      " she doesn't seem to like him much. You wonder why she is"
+                                      " still with him. You're about to tell her something about"
+                                      " how you'd treat her better when someone grabs you by your"
+                                      " shoulder and punches you. It wasn't a hard punch, but probably"
+                                      " the strongest he could throw. This guy didn't seem like"
+                                      " someone who does this sort of 'work' often. He still manages to"
+                                      " overpower you. You need an advantage..."
+                                      "\n (1) grab the steak knife (2) grab the glass")
+    if (choice == 1):
+        sknife()
+
+    elif (choice == 2):
+        sglass()
+    
+    else:
+        bsmart()
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System  #
