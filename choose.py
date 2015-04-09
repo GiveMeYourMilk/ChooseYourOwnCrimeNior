@@ -799,7 +799,7 @@ def vignore():
                         "You look at the letter, put it down and"
                         " walk away. That letter isn't what you "
                         "need right now. You're barely a detective "
-                        "you're not a world class ninja spy assassin."
+                        "you're not a world class ninja-spy-assassin."
                         " As you walk away you realise that was it,"
                         " you're last chance to live out your dream"
                         " of being a classic detective like the ones"
@@ -868,6 +868,36 @@ def fquestion():
 
     else:
         fquestion()
+
+def qmafia():
+    messagebox.showinfo("END",
+                        "You're just outside the old abandoned warehouse that"
+                        " the mafia has been using as their head quarters."
+                        " You bust through the doors and yell that you're"
+                        " here to bring bring in Silvone. As you say that"
+                        " you realise that they killed your boss in his office"
+                        " just for having the evidence. You hear the doors behind"
+                        " you slam shut and you realise you've reached the end of"
+                        " the line.")
+
+def qbar():
+    choice = simpledialog.askinteger("Bar",
+                                     "You decide against confronting the people who"
+                                     " kill in cold blood. You head to The Stacked Deck."
+                                     " This was the place where all the filth of"
+                                     " Chicago spent their dirty money. You decide against"
+                                     " yelling out your motives for being here and head to"
+                                     " the bar to scope the place out. You sit down and"
+                                     " the bartender sets a drink down infront of you."
+                                     "\n (1) drink it (2) avoid it")
+    if (choice == 1):
+        bdink()
+
+    elif (choice == 2):
+        bsmart()
+    
+    else:
+        qbar()
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System  #
