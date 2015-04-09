@@ -673,14 +673,14 @@ def qnormal():
                         "Theres no point in going down some sketchy road at dusk."
                         "\n Any other day you would have been all over this new road,"
                         "\n exploring this path and trying to play some detective game"
-                        "\n as you waited to hear back from the agency. However, that"
+                        "\n as you waited to hear back from the agency. However, that life"
                         "\n is all behind you now. You start to wonder how your life"
-                        "\n will change, after you quit the job you worked so hard to get."
+                        "\n will change. After all, you quit the job you worked so hard to get."
                         "\n Little did you know this was the last thing that was on your mind."
                         "\n Even though you went the normal way home you still felt rushed."
                         "\n Quickly you decide to cross the street. As you cross the street,"
-                        "\n you feel a sensation. You look up and all you see is the "
-                        "\n blinding lights of a car. Immediately, your world goes black...")
+                        "\n you feel a sensation. You look up and all you see is the blinding"
+                        "\n lights of a car. You can barely breath as everything goes black...")
 
     messagebox.showinfo("Going Home",
                         "SORROW AND REGRET ENDING")
@@ -688,8 +688,40 @@ def qnormal():
 
 def qshortcut():
     choice = simpledialog.askinteger("Going Home",
-                                     "")
+                                     "Approaching the corner you start to get uneasy."
+                                     "\n You get this very strange vibe from the alley as"
+                                     "\n you turn onto to it. However all you see is an old"
+                                     "\n man that looks poor and homeless."
+                                     "\n (1) Approach the hobo or"
+                                     "\n (2) ignore him and head home.")
+     if (choice == 1):
+        qhobo()
+        
+    elif (choice == 2):
+        qhome_end()
+        
+    else:
+        qshortcut()
 
+def qhobo():
+    messagebox.showinfo("Hobo Interactions",
+                        " You approach the hobo with caution, it's almost like
+                        "\n you feared the man against the wall.
+                        ###############################################
+
+
+def qhome_end():
+    messagebox.showinfo("Going Home",
+                        " You walk past the hobo as if he wasn't even there."
+                        "\n You just want to get home so there is no need to"
+                        "\n talk to this stranger. When you arrived at your"
+                        "\n house it felt extremely quiet. So that night you"
+                        "\n decided to get a dog and adopted it on the spot."
+                        "\n You become best friends and completely forget about"
+                        "\n your life outside the house.)
+
+    messagebox.showinfo("Going Home",
+                        "IGNORANCE IS BLISS ENDING")
 
 
  ################ GiveMeYourMilk Functions #####################
