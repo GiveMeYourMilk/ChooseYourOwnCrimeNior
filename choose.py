@@ -694,7 +694,7 @@ def qshortcut():
                                      "\n man that looks poor and homeless."
                                      "\n (1) Approach the hobo or"
                                      "\n (2) ignore him and head home.")
-     if (choice == 1):
+    if (choice == 1):
         qhobo()
         
     elif (choice == 2):
@@ -704,11 +704,24 @@ def qshortcut():
         qshortcut()
 
 def qhobo():
-    messagebox.showinfo("Hobo Interactions",
-                        " You approach the hobo with caution, it's almost like
-                        "\n you feared the man against the wall.
-                        ###############################################
+    choice = simpledialog.askinteger("Hobo Interactions",
+                                     " You approach the hobo with caution, it's almost like"
+                                     "\n you feared the man against the wall. You ask if he is"
+                                     "\n ok and he replies in a raspy voice,"
+                                     "\n 'Would you kindly spare some change for me?'"
+                                     "\n (1) Give the hobo money or (2) kick dirt in his face?")
+    if (choice == 1):
+        qhobo_end()
+        
+    elif (choice == 2):
+        qhobo_kill()
+        
+    else:
+        qhobo()
 
+def qhobo_kill():
+    messagebox.showinfo("Hobo Interactions",
+                        "...")
 
 def qhome_end():
     messagebox.showinfo("Going Home",
@@ -718,7 +731,7 @@ def qhome_end():
                         "\n house it felt extremely quiet. So that night you"
                         "\n decided to get a dog and adopted it on the spot."
                         "\n You become best friends and completely forget about"
-                        "\n your life outside the house.)
+                        "\n your life outside the house.")
 
     messagebox.showinfo("Going Home",
                         "IGNORANCE IS BLISS ENDING")
