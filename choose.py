@@ -639,12 +639,9 @@ def qstore():
                                      "\n to the store you couldnt find the milk. Walking"
                                      "\n around a bit you finally find the dairy aisle,"
                                      "\n however they only have one gallon of each milk type"
-                                     "\n Do you take the (1) 1% milk, (2) 2% milk or (3) the Whole milk")
+                                     "\n Do you take the (1) 1% milk or (2) the Whole milk")
     if (choice == 1):
         q1%()
-        
-    elif (choice == 2):
-        q2%()
         
     elif (choice == 2):
         qwhole()
@@ -719,9 +716,45 @@ def qhobo():
     else:
         qhobo()
 
+
+def qhobo_end():
+    messagebox.showinfo("Hobo Interactions",
+                        "You reach into your wallet and realize you have no change,"
+                        "\n just a few dollar bills. You offer him what you have and"
+                        "\n he accepts it graciously. You begin to walk away but before"
+                        "\n you get to the end of the alley, the hobo stops you."
+                        "\n He calls to you and tells you to come with him.")
+
+    messagebox.showinfo("Hobo Interactions",
+                        "He went to an old payphone down the street and called someone."
+                        "\n He said he called his brother to come and treat you because"
+                        "\n of your generosity. In a matter of minutes a car pulls up to"
+                        "\n the curb and the driver tells you to git in. He was well dressed"
+                        "\n in a nice new suit. You get well situated with him and go out"
+                        "\n for some drinks. The rest of the night is a blur but it was fun.")
+
+    messagebox.showinfo("Hobo Interactions",
+                        "GOOD SAMARITAN ENDING")
+
 def qhobo_kill():
     messagebox.showinfo("Hobo Interactions",
                         "...")
+
+    messagebox.showinfo("Hobo Interactions",
+                        "You stand shocked, there is blood starting to trickle"
+                        "\n down his shoulder. There must have been a shard of metal"
+                        "\n in the dirt. You start to panic as you try to check if he"
+                        "\n is fine. Worried, you take him to the hospital and then"
+                        "\n something hits you. The kick of dirt must have been pretty"
+                        "\n powerful if it was to impale him with a shard of metal"
+                        "\n To test this power you found, you try out for a soccer club."
+                        "\n Amazingly enough you're the best forward there. They recruit"
+                        "\n you on spot. You make enough of an impact to play in"
+                        "\n the upcoming world cup event and win it for your team.")
+
+    messagebox.showinfo("Hobo Interactions",
+                        "UNFOUND TALENT ENDING")
+
 
 def qhome_end():
     messagebox.showinfo("Going Home",
