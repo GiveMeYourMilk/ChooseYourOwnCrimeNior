@@ -628,7 +628,7 @@ def nope():
 def iquit():
     choice = simpledialog.askinteger("Quiter",
                                      "You decide that the life you've always wanted "
-                                     "\n as a detective is not suitable to live."
+                                     "\nas a detective is not suitable to live."
                                      "\n It's too dangerous for you to take the risk of"
                                      "\n working there after someone just got killed."
                                      "\n You realize you don't have milk at home. "
@@ -644,13 +644,13 @@ def iquit():
 
 def qstore():
     choice = simpledialog.askinteger("Getting Milk",
-                                     " It was a short walk to the store, but once you got"
+                                     "It was a short walk to the store, but once you got"
                                      "\n to the store you couldnt find the milk. Walking"
                                      "\n around a bit you finally find the dairy aisle,"
-                                     "\n however they only have one gallon of each milk type"
-                                     "\n Do you take the (1) 1% milk or (2) the Whole milk")
+                                     "\n however they only have one gallon of each milk type."
+                                     "\n Do you take the (1) 1% milk or (2) the Whole milk?")
     if (choice == 1):
-        q1%()
+        q1()
         
     elif (choice == 2):
         qwhole()
@@ -659,11 +659,77 @@ def qstore():
         qstore()
 
 
+def qwhole():
+    choice = simpledialog.askinteger("Getting Milk",
+                                     "Whole milk just seemed to fit the occasion, didn't it."
+                                     "\n When you enter your house from the long walk home you "
+                                     "\nplop yourself down on your couch. However the seat cusion"
+                                     "\n didn't feel right. You lift up the cushion to see what"
+                                     "\n looked to be a genie lamp. But theres no way that it"
+                                     "\n could actually... Subconsciously you start rubbing the"
+                                     "\n lamp and a white mist comes out. In awe of what was "
+                                     "\nappearing in front of you, you stand still. Then the idea"
+                                     "\n of wishes popped into your head. As soon as the genie "
+                                     "\nappeared you blurted out your wish. Was your wish-"
+                                     "\n (1) Restart your life to the moment you got the job"
+                                     "\n or"
+                                     "\n (2) Get enough money to live out your life?")
+    if (choice == 1):
+        qrestart()
+        
+    elif (choice == 2):
+        qmoney()
+        
+    else:
+        qwhole()
+
+def qmoney():
+    messagebox.showinfo("Genies Wish",
+                        "You wake up the next day with no recollection of"
+                        " the previous day. All that you could think about"
+                        " are the wads of cash all over your bed. Struck "
+                        "with amazement, you start to pack up all the cash "
+                        "you can see and take it to the bank. You use the "
+                        "money you now have to live the rest of your life in"
+                        " peace with no need to work. Everything is so good "
+                        "it almost feels like it's a dream...")
+
+    messagebox.showinfo("Genies Wish",
+                        "ALL AT EASE ENDING")
+
+def qrestart():
+    messagebox.showinfo("Genies Wish",
+                        "Immediately your wish comes true."
+                        " Before you know it your memory of"
+                        " this past day are gone and ...")
+
+    messagebox.showinfo("Genies Wish",
+                        "...")
+                        
+    intro()
+
+def q1():
+    messagebox.showinfo("Getting Milk",
+                        "Walking home with your recently purchased milk, you get excited."
+                        " You think to yourself 'Wow i can't wait to get home and drink"
+                        " some milk'. As you enter your house you open the milk jug. But"
+                        " before you can take a drink of milk, a knife comes out of nowhere."
+                        " Luckily your milk jug blocked the knife. However, followed by the knife"
+                        " was the sound of a gunshot. You look down at your chest and see a fatal"
+                        " wound near your lungs. Quickly you collapse to the ground. As your"
+                        " vision starts to fade, you notice a man in dark clothing slowly"
+                        " approaching you. His voice is faint but still you hear 'This is only"
+                        " the beginning' before you close your eyes one last time.")
+
+    messagebox.showinfo("Getting Milk",
+                        "KILLERS VICTORY ENDING")
+    
+
 def qhome():
     choice = simpledialog.askinteger("Going Home",
                                      "You decide to go home but you want to get home quickly. "
-                                     "\n There is a path up ahead that will get you home much quicker, "
-                                     "\n but you have never been down it before and it's a bit sketchy."
+                                     "\nThere is a path up ahead that will get you home much quicker, "
+                                     "\nbut you have never been down it before and it's a bit sketchy."
                                      "\n Do you want to (1) take the shortcut or (2) go the long route?")
     if (choice == 1):
         qshortcut()
@@ -677,16 +743,16 @@ def qhome():
 def qnormal():
     messagebox.showinfo("Going Home",
                         "Theres no point in going down some sketchy road at dusk."
-                        "\n Any other day you would have been all over this new road,"
-                        "\n exploring this path and trying to play some detective game"
-                        "\n as you waited to hear back from the agency. However, that life"
-                        "\n is all behind you now. You start to wonder how your life"
-                        "\n will change. After all, you quit the job you worked so hard to get."
-                        "\n Little did you know this was the last thing that was on your mind."
-                        "\n Even though you went the normal way home you still felt rushed."
-                        "\n Quickly you decide to cross the street. As you cross the street,"
-                        "\n you feel a sensation. You look up and all you see is the blinding"
-                        "\n lights of a car. You can barely breath as everything goes black...")
+                        " Any other day you would have been all over this new road,"
+                        " exploring this path and trying to play some detective game"
+                        " as you waited to hear back from the agency. However, that life"
+                        " is all behind you now. You start to wonder how your life"
+                        " will change. After all, you quit the job you worked so hard to get."
+                        " Little did you know this was the last thing that was on your mind."
+                        " Even though you went the normal way home you still felt rushed."
+                        " Quickly you decide to cross the street. As you cross the street,"
+                        " you feel a sensation. You look up and all you see is the blinding"
+                        " lights of a car. You can barely breath as everything goes black...")
 
     messagebox.showinfo("Going Home",
                         "SORROW AND REGRET ENDING")
@@ -729,18 +795,18 @@ def qhobo():
 def qhobo_end():
     messagebox.showinfo("Hobo Interactions",
                         "You reach into your wallet and realize you have no change,"
-                        "\n just a few dollar bills. You offer him what you have and"
-                        "\n he accepts it graciously. You begin to walk away but before"
-                        "\n you get to the end of the alley, the hobo stops you."
-                        "\n He calls to you and tells you to come with him.")
+                        " just a few dollar bills. You offer him what you have and"
+                        " he accepts it graciously. You begin to walk away but before"
+                        " you get to the end of the alley, the hobo stops you."
+                        " He calls to you and tells you to come with him.")
 
     messagebox.showinfo("Hobo Interactions",
                         "He went to an old payphone down the street and called someone."
-                        "\n He said he called his brother to come and treat you because"
-                        "\n of your generosity. In a matter of minutes a car pulls up to"
-                        "\n the curb and the driver tells you to git in. He was well dressed"
-                        "\n in a nice new suit. You get well situated with him and go out"
-                        "\n for some drinks. The rest of the night is a blur but it was fun.")
+                        " He said he called his brother to come and treat you because"
+                        " of your generosity. In a matter of minutes a car pulls up to"
+                        " the curb and the driver tells you to git in. He was well dressed"
+                        " in a nice new suit. You get well situated with him and go out"
+                        " for some drinks. The rest of the night is a blur but it was fun.")
 
     messagebox.showinfo("Hobo Interactions",
                         "GOOD SAMARITAN ENDING")
@@ -751,15 +817,15 @@ def qhobo_kill():
 
     messagebox.showinfo("Hobo Interactions",
                         "You stand shocked, there is blood starting to trickle"
-                        "\n down his shoulder. There must have been a shard of metal"
-                        "\n in the dirt. You start to panic as you try to check if he"
-                        "\n is fine. Worried, you take him to the hospital and then"
-                        "\n something hits you. The kick of dirt must have been pretty"
-                        "\n powerful if it was to impale him with a shard of metal"
-                        "\n To test this power you found, you try out for a soccer club."
-                        "\n Amazingly enough you're the best forward there. They recruit"
-                        "\n you on spot. You make enough of an impact to play in"
-                        "\n the upcoming world cup event and win it for your team.")
+                        " down his shoulder. There must have been a shard of metal"
+                        " in the dirt. You start to panic as you try to check if he"
+                        " is fine. Worried, you take him to the hospital and then"
+                        " something hits you. The kick of dirt must have been pretty"
+                        " powerful if it was to impale him with a shard of metal"
+                        " To test this power you found, you try out for a soccer club."
+                        " Amazingly enough you're the best forward there. They recruit"
+                        " you on spot. You make enough of an impact to play in"
+                        " the upcoming world cup event and win it for your team.")
 
     messagebox.showinfo("Hobo Interactions",
                         "UNFOUND TALENT ENDING")
@@ -768,12 +834,12 @@ def qhobo_kill():
 def qhome_end():
     messagebox.showinfo("Going Home",
                         " You walk past the hobo as if he wasn't even there."
-                        "\n You just want to get home so there is no need to"
-                        "\n talk to this stranger. When you arrived at your"
-                        "\n house it felt extremely quiet. So that night you"
-                        "\n decided to get a dog and adopted it on the spot."
-                        "\n You become best friends and completely forget about"
-                        "\n your life outside the house.")
+                        " You just want to get home so there is no need to"
+                        " talk to this stranger. When you arrived at your"
+                        " house it felt extremely quiet. So that night you"
+                        " decided to get a dog and adopted it on the spot."
+                        " You become best friends and completely forget about"
+                        " your life outside the house.")
 
     messagebox.showinfo("Going Home",
                         "IGNORANCE IS BLISS ENDING")
