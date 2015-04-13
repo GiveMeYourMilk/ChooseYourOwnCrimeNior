@@ -981,7 +981,7 @@ def bdrink():
                         " bar. You stand up to check it. The room"
                         " starts spinning. You collapse. As you die"
                         " you realise that taking drinks from stangers might"
-                        " no be the best idea.")
+                        " not be the best idea.")
 
 def bsmart():
     choice = simpledialog.askinterger("The Ace",
