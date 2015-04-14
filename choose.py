@@ -923,16 +923,16 @@ def kdisplay():
 def fquestion():
     choice = simpledialog.askinteger("Rooftop",
                                      "You discover he was just a hitman for"
-                                     " Silvone. Silvone was the biggest mob"
-                                     " in the city. He was the man Robinson"
-                                     " was trying to bring down when he was"
-                                     " shot. Silvone had been untouchable, "
-                                     "but Robinson had finally got something"
-                                     " on him. You cuff the hitman to the rooftop"
-                                     " and leave his note on the office door."
-                                     " You finally had something on Silvone,"
-                                     " but you're not sure it's enough. You"
-                                     " need evidence from the source. "
+                                     " \nSilvone. Silvone was the biggest mob"
+                                     " \nin the city. He was the man Robinson"
+                                     " \nwas trying to bring down when he was"
+                                     " \nshot. Silvone had been untouchable, "
+                                     "\nbut Robinson had finally got something"
+                                     " \non him. You cuff the hitman to the rooftop"
+                                     " \nand leave his note on the office door."
+                                     " \nYou finally had something on Silvone,"
+                                     " \nbut you're not sure it's enough. You"
+                                     " \nneed evidence from the source. "
                                      "\n (1) check the local crime bar (2) check the mafia hideout")
     if (choice == 1):
         qbar()
@@ -946,23 +946,23 @@ def fquestion():
 def qmafia():
     messagebox.showinfo("END",
                         "You're just outside the old abandoned warehouse that"
-                        " the mafia has been using as their head quarters."
-                        " You bust through the doors and yell that you're"
-                        " here to bring bring in Silvone. As you say that"
-                        " you realise that they killed your boss in his office"
-                        " just for having the evidence. You hear the doors behind"
-                        " you slam shut and you realise you've reached the end of"
-                        " the line.")
+                        " \nthe mafia has been using as their head quarters."
+                        " \nYou bust through the doors and yell that you're"
+                        " \nhere to bring bring in Silvone. As you say that"
+                        " \nyou realise that they killed your boss in his office"
+                        " \njust for having the evidence. You hear the doors behind"
+                        " \nyou slam shut and you realise you've reached the end of"
+                        " \nthe line.")
 
 def qbar():
     choice = simpledialog.askinteger("Bar",
                                      "You decide against confronting the people who"
-                                     " kill in cold blood. You head to The Stacked Deck."
-                                     " This was the place where all the filth of"
-                                     " Chicago spent their dirty money. You decide against"
-                                     " yelling out your motives for being here and head to"
-                                     " the bar to scope the place out. You sit down and"
-                                     " the bartender sets a drink down infront of you."
+                                     " \nkill in cold blood. You head to The Stacked Deck."
+                                     " \nThis was the place where all the filth of"
+                                     " \nChicago spent their dirty money. You decide against"
+                                     " \nyelling out your motives for being here and head to"
+                                     " \nthe bar to scope the place out. You sit down and"
+                                     " \nthe bartender sets a drink down infront of you."
                                      "\n (1) drink it (2) avoid it")
     if (choice == 1):
         bdink()
@@ -976,32 +976,32 @@ def qbar():
 def bdrink():
     messagebox.showinfo("END",
                         "You take a sip of your drink. Fizzy"
-                        " you think to yourself. You see something"
-                        " interesting happening in the back of the"
-                        " bar. You stand up to check it. The room"
-                        " starts spinning. You collapse. As you die"
-                        " you realise that taking drinks from stangers might"
-                        " not be the best idea.")
+                        " \nyou think to yourself. You see something"
+                        " \ninteresting happening in the back of the"
+                        " \nbar. You stand up to check it. The room"
+                        " \nstarts spinning. You collapse. As you die"
+                        " \nyou realise that taking drinks from stangers might"
+                        " \nnot be the best idea.")
 
 def bsmart():
-    choice = simpledialog.askinterger("The Ace",
+    choice = simpledialog.askinteger("The Ace",
                                       "You look down at the drink, but decide against it."
-                                      " You turn back around to scope out the bar. There is"
-                                      " massive bar fight going on. You wonder if this kind"
-                                      " of thing happens often. Behind the choas of flying"
-                                      " chairs you see a girl who stands. A brunette in slinky"
-                                      " black dress sipping on something fruity. You rationalise"
-                                      " that talking to her would be very useful to your investagation."
-                                      " You walk back to her avoiding flying bodies. You ask what"
-                                      " she's doing in a place like this. She tells you something"
-                                      " about how her boyfriend asked her to wiat for him here."
-                                      " she doesn't seem to like him much. You wonder why she is"
-                                      " still with him. You're about to tell her something about"
-                                      " how you'd treat her better when someone grabs you by your"
-                                      " shoulder and punches you. It wasn't a hard punch, but probably"
-                                      " the strongest he could throw. This guy didn't seem like"
-                                      " someone who does this sort of 'work' often. He still manages to"
-                                      " overpower you. You need an advantage..."
+                                      " \nYou turn back around to scope out the bar. There is"
+                                      " \nmassive bar fight going on. You wonder if this kind"
+                                      " \nof thing happens often. Behind the choas of flying"
+                                      " \nchairs you see a girl who stands. A brunette in slinky"
+                                      " \nblack dress sipping on something fruity. You rationalise"
+                                      " \nthat talking to her would be very useful to your investagation."
+                                      " \nYou walk back to her avoiding flying bodies. You ask what"
+                                      " \nshe's doing in a place like this. She tells you something"
+                                      " \nabout how her boyfriend asked her to wiat for him here."
+                                      " \nshe doesn't seem to like him much. You wonder why she is"
+                                      " \nstill with him. You're about to tell her something about"
+                                      " \nhow you'd treat her better when someone grabs you by your"
+                                      " \nshoulder and punches you. It wasn't a hard punch, but probably"
+                                      " \nthe strongest he could throw. This guy didn't seem like"
+                                      " \nsomeone who does this sort of 'work' often. He still manages to"
+                                      " \noverpower you. You need an advantage..."
                                       "\n (1) grab the steak knife (2) grab the glass")
     if (choice == 1):
         sknife()
@@ -1011,6 +1011,27 @@ def bsmart():
     
     else:
         bsmart()
+
+def sknife():
+    messagebox.showinfo("END",
+                        "You grab the knife. He runs at you."
+                        " You didn't even stab him. You were"
+                        " just holding the knife and he ran "
+                        "at you. This guy was seriously crazy."
+                        " You look at him and you recognize "
+                        "him. The main that just impaled himself"
+                        " is, or rather was, Silvone.")
+
+def sglass():
+    messagebox.showinfo("END",
+                        "You grab the glass. He runs at you."
+                        " While he is tackling you hit him "
+                        "in the head with the glass. He falls"
+                        " unconscious. You look down and you recognize"
+                        " him. The man lying unconscious is"
+                        " Silvone. You call it in and with"
+                        " the evidence you have against him"
+                        " he is going away for life.")
 
 ################ Winikka's Functions #####################
 # Note this is an alert of the Winikka Broadcast System  #
