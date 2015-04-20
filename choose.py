@@ -37,6 +37,7 @@ def intro():
                             "tomorrow. Enjoy your night.'")
     name = simpledialog.askstring("Prologue", "'By the way, what was"
                                        " your name again?'")
+    global name
     messagebox.showinfo("Prologue",
                         '"' + name + '"' + ", I'll remember that.")
     messagebox.showinfo("Prologue",
@@ -61,7 +62,7 @@ def intro():
                         "ou initially anticipated.")
     messagebox.showinfo("A New Case",
                         "'What happened?!', you ask one of the"
-                        " nearby officers-")
+                        " nearby officers.")
     messagebox.showinfo("A New Case",
                         "'The boss... he was shot and killed', he answers."
                         "\n    "
@@ -90,7 +91,7 @@ def intro2():
     elif choice == 4:
         ivengence()
     else:
-        intro()
+        intro2()
 
 ################ Amiel's Functions #####################
 
@@ -470,16 +471,50 @@ def analyze():
                         "age to get in and are there. And who is sitting there?"
                         " None other than the killer and the boss. Robert Malc"
                         "one and Silvone.")
-    choice = simpledialog.askinteger("Robert Malcone and S",
+    analyze2()
+   
+def analyze2():
+     choice = simpledialog.askinteger("Robert Malcone and S",
                                      "\nThis is it, the time has come. What" + \
                                      " will you do?"
                                      "\n"
                                      "\n(1)An eye for an eye"
                                      "\n(2)Close your case")
-    # Wylder, analyze() function  will lead to one of yours functions finish up
-        #next class
-
-    
+     if choice == 1:
+         eye()
+     elif choice == 2:
+         close()
+     else:
+         analyze2()
+def eye():
+    messagebox.showinfo("End of the line",
+                        "You decide to finish the job and take the shot."
+                        " And another. And another. Lost in your rage, you"
+                        " don't feel bullets coming at you. Even after the "
+                        "bullets are out, you keep shooting. The boss is dead"
+                        " after taking every single bullet to the head. Bu"
+                        "t was it"
+                        " worth it?")
+    messagebox.showinfo("End of the line",
+                        "'WORTH' ENDING")
+def close():
+    global name
+    messagebox.showinfo("End of the line",
+                        "You line up the your extra mags and find you"
+                        "rself a decently hidden place. Any moment now...")
+    messagebox.showinfo("End of the line",
+                        "'Freeze!'")
+    messagebox.showinfo("End of the line",
+                        "A storm of bullets hails everywhere. You take pre"
+                        "cise shots and take out Silvone, Robert Malcone, and"
+                        " a few others. Eventually, there's a ceasefire. The"
+                        " gun team looks around for you. You smile and jump "
+                        "down. Seeing you, they come and shake your hand. The"
+                        " biggest mobster in the city is down. You manage to"
+                        " get revenge and something else too. Your first case"
+                        " is closed.")
+    messagebox.showinfo("End of the line",
+                        "DETECTIVE " + name + " ENDING")
 def investigate():
     messagebox.showinfo("Third Hit",
                         "\nDeciding to investigate further, you look for more ev" + \
