@@ -2,12 +2,12 @@
 # by Wylder G., Tabor F., Amiel I., Niraj M.
     ########################################
     #Starring Niraj M. as Malin383         #
-    #And Tabor F. as robat81               #
+    #And Tabor F. as Robat81               #
     #Also Amiel I. as amiel445566          #
     #featuring Wylder G. as GiveMeYourMilk #
     ########################################
-# Description: starter code for the Choose Your
-# Own Adventure Project
+#Link to Decision tree
+#https://docs.google.com/spreadsheets/d/1JEB3NRkNW0Gs_qbcgPYo4KnRF6FLmB_AEHIITEGLiPc/edit#gid=0
 
 # Music
 'FL Studios Gunshot FX'
